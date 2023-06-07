@@ -13,7 +13,6 @@ def calculate_dft(sequence):
     
     return dft_result
 
-# Example usage
 sequence = [1, 2, 3, 4, 5]
 
 dft_result = calculate_dft(sequence)

@@ -1,6 +1,6 @@
 import re
 
-def convolve_sequences(seq1, seq2):
+def conSeq(seq1, seq2):
     # Replace occurrences of number followed by 'U' with the corresponding number of '1's
     seq1 = re.sub(r'(\d+)U', lambda match: '1' * int(match.group(1)), seq1)
     seq2 = re.sub(r'(\d+)U', lambda match: '1' * int(match.group(1)), seq2)
@@ -20,6 +20,6 @@ def convolve_sequences(seq1, seq2):
 
 # Test the code
 sequence1 = '1'
-sequence2 = '1 2 3U'
-result = convolve_sequences(sequence1, sequence2)
+sequence2 = '1 2'
+result = conSeq(sequence1, sequence2)
 print(result)

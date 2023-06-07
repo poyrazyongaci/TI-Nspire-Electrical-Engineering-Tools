@@ -1,0 +1,1 @@
+nf:=((sr)/(2)):ff:=((f)/(nf)):af:=af*nf:af:=((int(af*100))/(100)):If ff≥0.5 Then:af:=nf-af:ph:=−p:Else:ph:=p:EndIf:Disp [af,ph]
