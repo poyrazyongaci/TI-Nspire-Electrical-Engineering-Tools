@@ -1,0 +1,5 @@
+Define LibPub kinetice(mass,velocity)=
+Func
+:©E = m*v^(2 )| mass, velocity
+:    Return 0.5*mass*velocity*velocity
+:EndFunc

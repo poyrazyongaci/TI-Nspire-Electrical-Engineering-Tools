@@ -1,0 +1,10 @@
+Define LibPub gausslaw1()=
+Prgm
+:Local electricflux
+:© φ = E * A * cos(θ)
+:Request "Electric Field (E)",e
+:Request "Area (A)",a
+:Request "Angle (radians)",θ
+:electricflux:=e*a*cos(θ)
+:Disp "Φ = ",electricflux
+:EndPrgm

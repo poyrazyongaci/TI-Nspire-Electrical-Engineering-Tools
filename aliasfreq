@@ -1,1 +1,15 @@
-nf:=((sr)/(2)):ff:=((f)/(nf)):af:=af*nf:af:=((int(af*100))/(100)):If ff≥0.5 Then:af:=nf-af:ph:=−p:Else:ph:=p:EndIf:Disp [af,ph]
+Define LibPub aliasfreq(f,p,sr)=
+Func
+:Local nyf,norf,folf,af,ph
+:nyf:=((sr)/(2))
+:norf:=((f)/(nyf))
+:folf:=norf-int(norf)
+:af:=folf*nyf
+:If folf≥0.5 Then
+:  af:=nyf-af
+:  ph:=−p
+:Else
+:  ph=p
+:EndIf
+:Return [af,ph]
+:EndFunc

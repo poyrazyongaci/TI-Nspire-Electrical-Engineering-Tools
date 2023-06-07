@@ -1,0 +1,11 @@
+Define LibPub coulomblaw()=
+Prgm
+:©((k*q1*q2)/(r^(2)))
+:Local result,k
+:k:=8.988*10^(9)
+:Request "Charge 1 (C) ",q1
+:Request "Charge 2 (C) ",q2
+:Request "Distance (m) ",r
+:result:=((k*q1*q2)/(r^(2)))
+:Disp "F = ",result
+:EndPrgm
