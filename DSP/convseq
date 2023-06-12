@@ -1,0 +1,1 @@
+Local seq1length,seq2length,result,convlength,i,j,k:seq1length:=dim(seq1):seq2length:=dim(seq2):convlength:=seq1length+seq2length-1:For i,1,convlength:  result[i]:=0:EndFor:For i,0,seq1length-1:  For j,0,seq2length-1:    result[i+j+1]:=result[i+j+1]+seq1[i+1]*seq2[j+1]:  EndFor:EndFor:Return result
