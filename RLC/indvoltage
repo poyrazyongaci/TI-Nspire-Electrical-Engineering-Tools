@@ -1,0 +1,1 @@
+Request "Inductance = ",l:RequestStr "Current Function (I(t)) = ",it:Request "Time (t) = ",time:setMode(2,1):setMode(5,1):Local derres:derres:=(expr(it),t)|t=time:Disp "Instantenious Voltage = ",l*derres

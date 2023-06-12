@@ -4,6 +4,7 @@ RLC:
     inductor current: i = 1/L ∫ v dt
     capacitor current: i = C dv/dt
 DSP:
+    convolution: y[n] = ∑ x[k] h[n-k]
 
 E&M:
 

@@ -1,0 +1,1 @@
+Request "Capacitance = ",c:RequestStr "Current Function (I(t)) = ",it:Request "Time (t) = ",time:setMode(2,1):setMode(5,1):Local intres:intres:=∫(expr(it),t)|t=time:Disp "Instantenious Voltage  = ",((intres)/(c))
