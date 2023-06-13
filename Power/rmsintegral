@@ -1,0 +1,1 @@
+Request "Start time = ",st:Request "End time = ",et:RequestStr "Function (V(t)) = ",fx::setMode(2,1):setMode(5,1):Local intres,vrms:intres:=∫((expr(fx))^(2),t,st,et):vrms:=√(((intres)/(et-st))):Disp "RMS (Vrms)  = ",vrms

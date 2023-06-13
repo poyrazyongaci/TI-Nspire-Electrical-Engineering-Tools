@@ -4,8 +4,8 @@
 Current Functions and programs
 
 DSP (Digital Signal Processing):
-    aliasfreq()
-
+    aliasfreq(input frequency, phase, sampling frequency)
+    convseq()
 
 E&M (Electrical and Magnetic) Interactions:
     gausslaw1()
@@ -14,5 +14,14 @@ E&M (Electrical and Magnetic) Interactions:
 
 RLC (Resistor Inductor Capacitor):
     capseries({c1,c2,c3,...cn})
+    capvoltage()
+    capcurrent()
     resparalel({r1,r2,r3,...rn})
     indparalel({l1,l2,l3,...ln})
+    indcurrent()
+    indvoltage()
+
+Power
+    rmsintegral()
+    
+    

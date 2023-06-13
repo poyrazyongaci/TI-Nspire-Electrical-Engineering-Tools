@@ -1,0 +1,1 @@
+©enter a sequence, such as {1,2,3,4}:Local n,smalln,k,result:n:=dim(seq1):For k,0,n-1:  result[k+1]:=∑(seq1[smalln+1]*^(−*((2*π*k)/(n))*smalln),smalln,0,n-1):EndFor:Return result

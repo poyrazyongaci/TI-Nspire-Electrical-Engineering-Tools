@@ -1,10 +1,9 @@
 RLC:
-    inductor voltage: v = L di/dt
-    capacitor voltage: v = 1/C ∫ i dt
-    inductor current: i = 1/L ∫ v dt
-    capacitor current: i = C dv/dt
+    
 DSP:
-    convolution: y[n] = ∑ x[k] h[n-k]
 
 E&M:
+
+Power:
+    
 
