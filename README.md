@@ -1,27 +1,24 @@
 # TI Nspire Electrical Engineering Tools
- Convinient tools for Electrical Engineers to be used on TI-Nspire
 
-Current Functions and programs
+Convenient tools for Electrical Engineers to be used on TI-Nspire.
 
-DSP (Digital Signal Processing):
-    aliasfreq(input frequency, phase, sampling frequency)
-    convseq()
+## DSP (Digital Signal Processing):
+- `aliasfreq(input frequency, phase, sampling frequency)`
+- `convseq()`
 
-E&M (Electrical and Magnetic) Interactions:
-    gausslaw1()
-    kinetice(mass, velocity)
-    coulomblaw()
+## E&M (Electrical and Magnetic) Interactions:
+- `gausslaw1()`
+- `kinetice(mass, velocity)`
+- `coulomblaw()`
 
-RLC (Resistor Inductor Capacitor):
-    capseries({c1,c2,c3,...cn})
-    capvoltage()
-    capcurrent()
-    resparalel({r1,r2,r3,...rn})
-    indparalel({l1,l2,l3,...ln})
-    indcurrent()
-    indvoltage()
+## RLC (Resistor Inductor Capacitor):
+- `capseries({c1, c2, c3, ..., cn})`
+- `capvoltage()`
+- `capcurrent()`
+- `resparallel({r1, r2, r3, ..., rn})`
+- `indparallel({l1, l2, l3, ..., ln})`
+- `indcurrent()`
+- `indvoltage()`
 
-Power
-    rmsintegral()
-    
-    
+## Power:
+- `rmsintegral()`
