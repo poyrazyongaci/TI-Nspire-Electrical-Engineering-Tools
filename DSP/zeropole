@@ -1,0 +1,25 @@
+Define LibPub zeropole()=
+Prgm
+:Local x,y,i,zero,poles
+:setMode(4,2)
+:RequestStr "Transfer Function",fz
+:fz:=expr(fz)
+:zero:=cPolyRoots(fz,z)
+:poles:=cPolyRoots(,z)
+:For i,1,dim(zero)
+:PlotXY real(zero[i])*20+159,imag(zero[i])*20+106,9
+:PlotXY real(poles[i])*20+159,imag(poles[i])*20+106,5
+:EndFor
+:Disp zero
+:DrawLine 159,0,159,212
+:DrawLine 0,106,320,106
+:For i,0,14
+:  DrawText i*20+16,122,i-7
+:  DrawLine i*20+19,110,i*20+19,102
+:EndFor
+:For i,0,10
+:  DrawText 165,i*20+14,−i+5
+:  DrawLine 163,i*20+6,155,i*20+6
+:EndFor
+:
+:EndPrgm
