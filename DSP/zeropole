@@ -11,13 +11,14 @@ Prgm
 :poles:=cPolyRoots(bfz,z)
 :Disp "Zeros = ",zero
 :Disp "Poles = ",poles
+:SetColor 0,255,255
 :For i,1,dim(zero)
 :PlotXY real(zero[i])*20+159,imag(zero[i])*20+106,9
 :EndFor
 :For i,1,dim(poles)
 :PlotXY real(poles[i])*20+159,imag(poles[i])*20+106,5
 :EndFor
-:
+:SetColor 0,0,0
 :DrawLine 159,0,159,212
 :DrawLine 0,106,320,106
 :For i,0,14

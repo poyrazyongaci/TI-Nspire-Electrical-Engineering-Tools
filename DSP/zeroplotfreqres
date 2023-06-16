@@ -1,0 +1,16 @@
+Define LibPub zeropolefreqres()=
+Prgm
+:RequestStr "Enter System Function = ",hz
+:Local z,hei,i,temp,height
+:Define z=^(−*θ)
+:hei:=expr(hz)
+:DrawLine 0,180,360,180
+:For i,0,8
+:  DrawText 4+i*38,195,−π+((i*π)/(4))
+:EndFor
+:For i,0,156
+:  temp:=((i*2*π)/(156))-π
+:  height:=real(hei|θ=temp)
+:  PlotXY 4+2*i,180-height*50,1
+:EndFor
+:EndPrgm
