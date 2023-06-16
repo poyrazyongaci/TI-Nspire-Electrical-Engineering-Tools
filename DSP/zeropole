@@ -1,16 +1,23 @@
 Define LibPub zeropole()=
 Prgm
+:©Do not enter negative powers
 :Local x,y,i,zero,poles
 :setMode(4,2)
-:RequestStr "Transfer Function",fz
-:fz:=expr(fz)
-:zero:=cPolyRoots(fz,z)
-:poles:=cPolyRoots(,z)
+:RequestStr "Transfer Function Numerator",tfz
+:RequestStr "Transfer Function Denominator",bfz
+:tfz:=expr(tfz)
+:zero:=cPolyRoots(tfz,z)
+:bfz:=expr(bfz)
+:poles:=cPolyRoots(bfz,z)
+:Disp "Zeros = ",zero
+:Disp "Poles = ",poles
 :For i,1,dim(zero)
 :PlotXY real(zero[i])*20+159,imag(zero[i])*20+106,9
+:EndFor
+:For i,1,dim(poles)
 :PlotXY real(poles[i])*20+159,imag(poles[i])*20+106,5
 :EndFor
-:Disp zero
+:
 :DrawLine 159,0,159,212
 :DrawLine 0,106,320,106
 :For i,0,14
