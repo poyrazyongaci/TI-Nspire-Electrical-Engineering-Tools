@@ -8,6 +8,7 @@ Down are the list of tools and their required parameters.
 - `convseq()`
 - `DFT()`
 - `zeropole()`
+- `zeropolefreqres()`
 
 ## E&M (Electrical and Magnetic) Interactions:
 - `gausslaw1()`
@@ -22,6 +23,9 @@ Down are the list of tools and their required parameters.
 - `indparallel({l1, l2, l3, ..., ln})`
 - `indcurrent()`
 - `indvoltage()`
+- `indimpedance(freq, inductance)`
+- `capimpedance(freq, capacitance)` 
+
 
 ## Power:
 - `rmsintegral()`

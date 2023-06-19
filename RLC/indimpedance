@@ -1,0 +1,7 @@
+Define LibPub indimpedance(freq,ind)=
+Func
+:©freq, ind
+:Local imp
+:imp:=*2*π*freq*ind
+:Return imp
+:EndFunc

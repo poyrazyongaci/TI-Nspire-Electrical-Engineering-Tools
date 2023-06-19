@@ -1,0 +1,7 @@
+Define LibPub capimpedance(freq,cap)=
+Func
+:©freq, cap
+:Local imp
+:imp:=((1)/(*2*π*freq*cap))
+:Return imp
+:EndFunc
