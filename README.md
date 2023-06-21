@@ -9,6 +9,8 @@ Down are the list of tools and their required parameters.
 - `DFT()`
 - `zeropole()`
 - `zeropolefreqres()`
+- `fouriercoef()`
+  - Currently usable but has bugs for piecewise functions. Sinusoids are not properly handled.
 
 ## E&M (Electrical and Magnetic) Interactions:
 - `gausslaw1()`
