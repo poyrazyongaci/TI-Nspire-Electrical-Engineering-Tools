@@ -1,0 +1,21 @@
+Define LibPub fcoeff()=
+Prgm
+:©Range is a list, PWs have multiple entries
+:RequestStr "Function (f(t))",ft
+:Request "Ranges of the function",ur
+:Local a0,ak,p,bk,i,aktemp,bktemp
+:ft:=expr(ft)
+:ak:=0
+:bk:=0
+:a0:=((1)/(ur[dim(ur)]-ur[1]))*∫(ft,t,ur[1],ur[dim(ur)])
+:For i,1,dim(ur)-1
+:aktemp:=((2)/(ur[i+1]-ur[i]))*∫(ft*cos(((2*π*k*t)/(ur[i+1]-ur[i]))),t,ur[i],ur[i+1])
+:bktemp:=((2)/(ur[i+1]-ur[i]))*∫(ft*sin(((2*π*k*t)/(ur[i+1]-ur[i]))),t,ur[i],ur[i+1])
+:ak:=ak+aktemp
+:bk:=bk+bktemp
+:EndFor
+:Disp "a0 = ",a0
+:Disp "ak = ",ak
+:Disp "bk = ",bk
+:
+:EndPrgm

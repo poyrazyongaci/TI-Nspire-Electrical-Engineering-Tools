@@ -5,9 +5,9 @@ DSP:
     fft grapher
        user enters the sequence, and the number of points to use in the fft
        example python code is provided in sketches
-    zero pole plot frequency response graph
     fourier coefficients
     impulse response from frequency response
+    perseval
          
 
 
@@ -15,4 +15,12 @@ E&M:
 
 Power:
     
+
+CompArch:
+    ActFrCallMIPS
+    ActFrreturnMIPS
+
+Integrals: (tentative)
+    Usub
+    trigsub
 
