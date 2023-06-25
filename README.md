@@ -4,30 +4,64 @@ Convenient tools for Electrical Engineers to be used on TI-Nspire.
 Down are the list of tools and their required parameters.
 
 ## DSP (Digital Signal Processing):
-- `aliasfreq(input frequency, phase, sampling frequency)`
-- `convseq()`
-- `DFT()`
-- `zeropole()`
-- `zeropolefreqres()`
-- `fouriercoef()`
+- [`aliasfreq(input frequency, phase, sampling frequency)`](#aliasfreq)
+- [`convseq()`](#convseq)
+- [`DFT()`](#dft)
+- [`zeropole()`](#zeropole)
+- [`zeropolefreqres()`](#zeropolefreqres)
+- [`fouriercoef()`](#fouriercoef)
   - Currently usable but has bugs for piecewise functions. Sinusoids are not properly handled.
 
 ## E&M (Electrical and Magnetic) Interactions:
-- `gausslaw1()`
-- `kinetice(mass, velocity)`
-- `coulomblaw()`
+- [`gausslaw1()`](#gausslaw1)
+- [`kinetice(mass, velocity)`](#kinetice)
+- [`coulomblaw()`](#coulomblaw)
 
 ## RLC (Resistor Inductor Capacitor):
-- `capseries({c1, c2, c3, ..., cn})`
-- `capvoltage()`
-- `capcurrent()`
-- `resparallel({r1, r2, r3, ..., rn})`
-- `indparallel({l1, l2, l3, ..., ln})`
-- `indcurrent()`
-- `indvoltage()`
-- `indimpedance(freq, inductance)`
-- `capimpedance(freq, capacitance)` 
+- [`capseries({c1, c2, c3, ..., cn})`](#capseries)
+- [`capvoltage()`](#capvoltage)
+- [`capcurrent()`](#capcurrent)
+- [`resparallel({r1, r2, r3, ..., rn})`](#resparallel)
+- [`indparallel({l1, l2, l3, ..., ln})`](#indparallel)
+- [`indcurrent()`](#indcurrent)
+- [`indvoltage()`](#indvoltage)
+- [`indimpedance(freq, inductance)`](#indimpedance)
+- [`capimpedance(freq, capacitance)`](#capimpedance)
 
 
 ## Power:
-- `rmsintegral()`
+- [`rmsintegral()`](#rmsintegral)
+
+
+
+# Function Descriptions and Usage
+Here is a detailed explanation of what each function does, and how to get the most out of them!
+
+
+## DSP (Digital Signal Processing):
+- ### aliasfreq
+- ### convseq
+- ### DFT
+- ### zeropole
+- ### zeropolefreqres
+- ### fouriercoef
+  - Currently usable but has bugs for piecewise functions. Sinusoids are not properly handled.
+
+## E&M (Electrical and Magnetic) Interactions:
+- ### gausslaw1
+- ### kinetice
+- ### coulomblaw
+
+## RLC (Resistor Inductor Capacitor):
+- ### capseries
+- ### capvoltage
+- ### capcurrent
+- ### resparallel
+- ### indparallel
+- ### indcurrent
+- ### indvoltage
+- ### indimpedance
+- ### capimpedance
+
+## Power
+- ### rmsintegral
