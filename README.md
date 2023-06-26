@@ -5,8 +5,8 @@ Down are the list of tools and their required parameters.
 
 ## DSP (Digital Signal Processing):
 - [`aliasfreq(input frequency, phase, sampling frequency)`](#aliasfreq)
-- [`convseq()`](#convseq)
-- [`DFT()`](#dft)
+- [`convseq(seq1,seq2)`](#convseq)
+- [`DFT(seq1)`](#dft)
 - [`zeropole()`](#zeropole)
 - [`zeropolefreqres()`](#zeropolefreqres)
 - [`fouriercoef()`](#fouriercoef)
@@ -40,6 +40,13 @@ Here is a detailed explanation of what each function does, and how to get the mo
 
 ## DSP (Digital Signal Processing):
 - ### aliasfreq
+  - #### Inputs
+    - frequency (Hz)
+    - phase (rad)
+    - sampling frequency (Hz)
+  - #### Outputs
+    - aliased/folded frequency (Hz)
+    - phase (rad)
 - ### convseq
 - ### DFT
 - ### zeropole
