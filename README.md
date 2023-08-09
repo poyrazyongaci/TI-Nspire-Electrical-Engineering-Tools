@@ -47,9 +47,47 @@ Here is a detailed explanation of what each function does, and how to get the mo
   - #### Outputs
     - aliased/folded frequency (Hz)
     - phase (rad)
+  - #### Example Usage
+    - Calculating how a 100Hz signal with pi/2 phase will appear when sampled at 75Hz
+    - `aliasfreq(100, pi/2, 75)`
+    - Output: `[25, -pi/2]`
+  
 - ### convseq
+  - #### Inputs
+    - sequence 1 (as a list with curly braces)
+    - sequence 2 (as a list with curly braces)
+  - #### Outputs
+    - convolution of the two sequences (as a list with curly braces, starts at t = 0)
+  - #### Example Usage
+    - Calculating the convolution of the sequences {1, 2, 3} and {4, 5, 6}
+    - `convseq({1, 2, 3}, {4, 5, 6})`
+    - Output: `{4, 13, 28, 27, 18}`
+    #### Notes
+    - In order to use the step function, entering a very long list of 1s will suffice. 
+
 - ### DFT
+  - #### Inputs
+    - sequence 1 (as a list with curly braces)
+  - #### Outputs
+    - DFT of the sequence (as a list with curly braces)
+  - #### Example Usage
+    - Calculating the DFT of the sequence {1, 2, 3}
+    - `DFT({1, 2, 3})`
+    - Output: `{6, -1.5 + 0.8660254038i, -1.5 - 0.8660254038i}`
+
 - ### zeropole
+  - #### Inputs
+    - Doesn't take any inputs, but prompts 2 inputs:
+    - Numerator of the transfer function (uses variable z and has strictly positive powers of z)
+    - Denominator of the transfer function (uses variable z and has strictly positive powers of z)
+  - #### Outputs
+    - zeros (shown as o's)
+    - poles (shown as x's)
+    - exact locations of the zeros and poles (shown in the calculator page)
+  - #### Example Usage
+    - Calculating the zeros and poles of the transfer function (z^2 + 1)/(z^4 + 1)
+    - `zeropole()`
+    - Output: shown on the graph/ calculator page zeros = {i, -i}, poles = {i, -i, 1, -1}
 - ### zeropolefreqres
 - ### fouriercoef
   - Currently usable but has bugs for piecewise functions. Sinusoids are not properly handled.
