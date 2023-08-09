@@ -1,0 +1,14 @@
+Define LibPub fftplot(seq1,n)=
+Prgm
+:© {1,2,3} and N-point
+:© takes the absolute value
+:Local fftresult,i,multcoeff,maxi
+:fftresult:=abs(dsp\fft(seq1,n))
+:DrawLine 0,200,316,200
+:maxi:=max(fftresult)
+:multcoeff:=((190)/(maxi))
+:For i,1,n
+:  PlotXY 2+((i*298)/(n)),−multcoeff*fftresult[i]+200,1
+:EndFor
+:Disp fftresult
+:EndPrgm

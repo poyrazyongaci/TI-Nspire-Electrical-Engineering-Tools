@@ -1,0 +1,15 @@
+Define LibPub fft(seq1,n)=
+Func
+:© {1,2,3} and N-point
+:Local smalln,l,k,result,diff,a
+:If n>dim(seq1) Then
+:  diff:=n-dim(seq1)
+:  For a,1,diff
+:    seq1:=augment(seq1,{0})
+:  EndFor
+:EndIf
+:For k,0,n-1
+:  result[k+1]:=∑(seq1[smalln+1]*^(−*((2*π*k)/(n))*smalln),smalln,0,n-1)
+:EndFor
+:Return result
+:EndFunc
